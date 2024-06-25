@@ -8,6 +8,8 @@
     --fuente-principal: 3.8rem; 
 }
 
+/* Globales **/ 
+
 html{
     font-size: 62.5%;
     /**CSS Box model*/ 
