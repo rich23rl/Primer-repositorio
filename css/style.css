@@ -27,6 +27,8 @@ body{
 /** Con las lineas anteriores usarlas en todos los proyectos para que 
 se adapte mejor a todos los navegadores y dispositivos*/ 
 
+
+/* tipografia **/ 
 h1{
     font-size: 3.8rem; /* var(--fuente-principal);
     color: var(--primario); */
