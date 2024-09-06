@@ -4,6 +4,7 @@
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
+    --grisclaro: #DFE9F3; 
 
     --fuente-principal: 3.8rem; 
 }
@@ -23,6 +24,7 @@ html{
 body{
     font-size: 16px; /** 1 rem = 10 px */
     font-family: "Krub", sans-serif;
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%);
 }
 /** Con las lineas anteriores usarlas en todos los proyectos para que 
 se adapte mejor a todos los navegadores y dispositivos*/ 
@@ -89,6 +91,15 @@ h1, h2, h3{
     }
 }
 
+.sombra {
+    -webkit-box-shadow: 10px 5px 15px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 10px 5px 15px 0px rgba(0,0,0,0.54);
+    box-shadow: 10px 5px 15px 0px rgba(0,0,0,0.54);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 .nav-bg {
     background-color: var(--secundario);
 }
@@ -122,6 +133,8 @@ h1, h2, h3{
     }
 }
 
+
+
 .navegacion-principal a{
     display: block;
     text-align: center;
@@ -146,8 +159,8 @@ y configurar el media querie*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: 20px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {
