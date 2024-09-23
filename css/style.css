@@ -15,6 +15,7 @@ html{
     font-size: 62.5%;
     /**CSS Box model*/ 
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -204,14 +205,21 @@ y configurar el media querie*/
 y configurar el media querie*/
 
 .contenido-hero h2,
-.contenido-hero {
+.contenido-hero p {
     color: var(--blanco);
 }
 
 
-.ubicacion{
+.contenido-hero .ubicacion{
     display: flex;
     align-items: flex-end;
+}
+/**  SCROLL SNAP */ 
+.servicios, 
+.navegacion-principal, 
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 /** Servicios **/
